@@ -1,1 +1,1 @@
-This directory contains and example input file, example.inp.  Since model output can be many GB, output files are not included here.
+This directory contains and example input file, example.inp.  Since model output can be many GB, the main output files, of which there are several, are not included here. However, the log file (which is the output to the consol during a run) as well as the summmary file are included.  This was run under v4.5, but the results should be the same under v4.7. The example was run on a cluster using 90 cores.
