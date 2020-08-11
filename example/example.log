@@ -1,0 +1,793 @@
+
+AutHetDet_Opt Ver 4.5, 16-Jun-2020
+
+
+Running program with   90 processes
+ Process    0 on node "mep" has    1 threads out of:    2
+ Process    1 on node "mep" has    1 threads out of:    2
+ Process    2 on node "mep" has    1 threads out of:    2
+ Process    3 on node "mep" has    1 threads out of:    2
+ Process    4 on node "mep" has    1 threads out of:    2
+ Process    5 on node "mep" has    1 threads out of:    2
+ Process    6 on node "mep" has    1 threads out of:    2
+ Process    7 on node "mep" has    1 threads out of:    2
+ Process    8 on node "mep" has    1 threads out of:    2
+ Process    9 on node "mep" has    1 threads out of:    2
+ Process   10 on node "node2" has    1 threads out of:    2
+ Process   30 on node "node3" has    1 threads out of:    2
+ Process   50 on node "node4" has    1 threads out of:    2
+ Process   70 on node "node5" has    1 threads out of:    2
+
+
+Parameters being used for simulation:
+ &PARAMS
+ ABSZERO =  1.000000000000000E-008,
+ DICI    =   2000.00000000000     ,
+ O2I     =   225.000000000000     ,
+ C_LI    =   10.0000000000000     ,
+ C_DI    =   100.000000000000     ,
+ N_DI    =   7.00000000000000     ,
+ ISEED   =          10,
+ READEPS = F,
+ ALF     =   1.61300000000000     ,
+ BET     =  0.557000000000000     ,
+ GAM     =  0.158000000000000     ,
+ DEL     =  1.200000000000000E-002,
+ CELL_F  =   1000.00000000000     ,
+ DELPSI  =  0.100000000000000     ,
+ I0MAX   =   406000.000000000     ,
+ DLAT    =   42.0000000000000     ,
+ H3PO4   =   1.00000000000000     ,
+ P_D     =   5.00000000000000     ,
+ NUSTAR  =   350.000000000000     ,
+ KAPPA   =   5000.00000000000     ,
+ NUDET   =   175.000000000000     ,
+ DGR_GGAMMA      =  -253.000000000000     ,
+ K_W     =  1.100000000000000E-002,
+ K_P     =  6.250000000000000E-004,
+ OMPTHREADS      =           1,
+ DIL_T0  =  0.200000000000000     ,
+ DIL_TF  =  0.200000000000000     ,
+ DIL_N   =           0,
+ NH3I_T0 =   5.00000000000000     ,
+ NH3I_TF =   5.00000000000000     ,
+ NH3I_N  =           0,
+ PCO2    =  4.000000000000000E-004,
+ PO2     =  0.210000000000000     ,
+ PV_CO2  =   2.60000000000000     ,
+ PV_O2   =   3.00000000000000     ,
+ MAXTRAITITERS   =  0.000000000000000E+000,
+ EPP_MIN =  1.000000000000000E-005,
+ EPP_MAX =   1.00000000000000     ,
+ ECC_MIN =  1.000000000000000E-005,
+ ECC_MAX =   1.00000000000000     ,
+ EBAC_MIN        =  1.000000000000000E-004,
+ EBAC_MAX        =   1.00000000000000     ,
+ SIGEPS_PP       =  0.000000000000000E+000,
+ SIGEPS_CC       =  0.000000000000000E+000,
+ SIGEPS_BAC      =  0.000000000000000E+000,
+ K_PP    =  0.000000000000000E+000,
+ SUMSIGWEIGHTS   = 3*1.00000000000000        ,
+ TON_PP_MIN      = -5.000000000000000E-002,
+ TON_PP_MAX      =   1.00000000000000     ,
+ TOFF_PP_MIN     =  0.000000000000000E+000,
+ TOFF_PP_MAX     =   1.05000000000000     ,
+ SIGOMG_PP       =   200.000000000000     ,
+ K_CHLA  =  2.500000000000000E-003,
+ T0_EP   =  0.000000000000000E+000,
+ TF_EP   =   730.000000000000     ,
+ GENSURF = F,
+ NSURFPTS        =          10,
+ REPORTTIME      =   1.00000000000000     ,
+ WHICHPP =           1,
+ MINCOMPFAC      =   500000.000000000     ,
+ T0      =  0.000000000000000E+000,
+ TDAYS   =   730.000000000000     ,
+ MAXSTEP_BIM     =    10000000,
+ MAXATTEMPTS     =           1,
+ USEOMPJAC       =           0,
+ HMAX_BIM        =  5.000000000000000E-002,
+ NPP     =           1,
+ NCC     =           1,
+ PPI     =  0.100000000000000     ,
+ C_PPI   =  0.100000000000000     ,
+ CCI     =  0.100000000000000     ,
+ BACI    =  0.100000000000000     ,
+ ATOL1   =  1.000000000000000E-006,
+ RTOL1   =  1.000000000000000E-006,
+ NBAC    =           1,
+ SURA    =   1.00000000000000     ,
+ T_K     =   293.000000000000     ,
+ PH      =   8.10000000000000     ,
+ DEPTH   =   1.00000000000000     ,
+ IS      =  0.720000000000000     ,
+ RHOBEG  =  0.490000000000000     ,
+ RHOEND  =  1.000000000000000E-004,
+ IPRINT  =           0,
+ MAXFUN  =       10000,
+ OPTIMIZE        = T,
+ FCNUPDATE       =         100
+ /
+
+Maximum ODE solution time set to:  2.10 (min)
+Maximum possible optmization time: 14.60 (days)
+
+Begining hyperBOB optimization at 19:35:44, 16-Jun-20 ...
+ Process   11 on node "node2" has    1 threads out of:    2
+ Process   12 on node "node2" has    1 threads out of:    2
+ Process   13 on node "node2" has    1 threads out of:    2
+ Process   14 on node "node2" has    1 threads out of:    2
+ Process   15 on node "node2" has    1 threads out of:    2
+ Process   16 on node "node2" has    1 threads out of:    2
+ Process   17 on node "node2" has    1 threads out of:    2
+ Process   18 on node "node2" has    1 threads out of:    2
+ Process   19 on node "node2" has    1 threads out of:    2
+ Process   20 on node "node2" has    1 threads out of:    2
+ Process   21 on node "node2" has    1 threads out of:    2
+ Process   22 on node "node2" has    1 threads out of:    2
+ Process   23 on node "node2" has    1 threads out of:    2
+ Process   24 on node "node2" has    1 threads out of:    2
+ Process   25 on node "node2" has    1 threads out of:    2
+ Process   26 on node "node2" has    1 threads out of:    2
+ Process   27 on node "node2" has    1 threads out of:    2
+ Process   28 on node "node2" has    1 threads out of:    2
+ Process   29 on node "node2" has    1 threads out of:    2
+ Process   31 on node "node3" has    1 threads out of:    2
+ Process   32 on node "node3" has    1 threads out of:    2
+ Process   33 on node "node3" has    1 threads out of:    2
+ Process   34 on node "node3" has    1 threads out of:    2
+ Process   35 on node "node3" has    1 threads out of:    2
+ Process   36 on node "node3" has    1 threads out of:    2
+ Process   37 on node "node3" has    1 threads out of:    2
+ Process   38 on node "node3" has    1 threads out of:    2
+ Process   39 on node "node3" has    1 threads out of:    2
+ Process   40 on node "node3" has    1 threads out of:    2
+ Process   41 on node "node3" has    1 threads out of:    2
+ Process   42 on node "node3" has    1 threads out of:    2
+ Process   43 on node "node3" has    1 threads out of:    2
+ Process   44 on node "node3" has    1 threads out of:    2
+ Process   45 on node "node3" has    1 threads out of:    2
+ Process   46 on node "node3" has    1 threads out of:    2
+ Process   47 on node "node3" has    1 threads out of:    2
+ Process   48 on node "node3" has    1 threads out of:    2
+ Process   49 on node "node3" has    1 threads out of:    2
+ Process   51 on node "node4" has    1 threads out of:    2
+ Process   52 on node "node4" has    1 threads out of:    2
+ Process   53 on node "node4" has    1 threads out of:    2
+ Process   54 on node "node4" has    1 threads out of:    2
+ Process   55 on node "node4" has    1 threads out of:    2
+ Process   56 on node "node4" has    1 threads out of:    2
+ Process   57 on node "node4" has    1 threads out of:    2
+ Process   58 on node "node4" has    1 threads out of:    2
+ Process   59 on node "node4" has    1 threads out of:    2
+ Process   60 on node "node4" has    1 threads out of:    2
+ Process   61 on node "node4" has    1 threads out of:    2
+ Process   62 on node "node4" has    1 threads out of:    2
+ Process   63 on node "node4" has    1 threads out of:    2
+ Process   64 on node "node4" has    1 threads out of:    2
+ Process   65 on node "node4" has    1 threads out of:    2
+ Process   66 on node "node4" has    1 threads out of:    2
+ Process   67 on node "node4" has    1 threads out of:    2
+ Process   68 on node "node4" has    1 threads out of:    2
+ Process   69 on node "node4" has    1 threads out of:    2
+ Process   71 on node "node5" has    1 threads out of:    2
+ Process   72 on node "node5" has    1 threads out of:    2
+ Process   73 on node "node5" has    1 threads out of:    2
+ Process   74 on node "node5" has    1 threads out of:    2
+ Process   75 on node "node5" has    1 threads out of:    2
+ Process   76 on node "node5" has    1 threads out of:    2
+ Process   77 on node "node5" has    1 threads out of:    2
+ Process   78 on node "node5" has    1 threads out of:    2
+ Process   79 on node "node5" has    1 threads out of:    2
+ Process   80 on node "node5" has    1 threads out of:    2
+ Process   81 on node "node5" has    1 threads out of:    2
+ Process   82 on node "node5" has    1 threads out of:    2
+ Process   83 on node "node5" has    1 threads out of:    2
+ Process   84 on node "node5" has    1 threads out of:    2
+ Process   85 on node "node5" has    1 threads out of:    2
+ Process   86 on node "node5" has    1 threads out of:    2
+ Process   87 on node "node5" has    1 threads out of:    2
+ Process   88 on node "node5" has    1 threads out of:    2
+ Process   89 on node "node5" has    1 threads out of:    2
+Process 59 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18400518. (ODE time: .05 min; 19:40:50, 16-Jun-20)
+Process 61 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 13081299. (ODE time: .05 min; 19:41:04, 16-Jun-20)
+Process 32 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 15855099. (ODE time: .06 min; 19:41:18, 16-Jun-20)
+Process 39 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 15435818. (ODE time: .06 min; 19:41:27, 16-Jun-20)
+Process 75 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18005756. (ODE time: .06 min; 19:41:30, 16-Jun-20)
+Process 9 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17555174. (ODE time: .06 min; 19:41:32, 16-Jun-20)
+Process 11 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 15108156. (ODE time: .06 min; 19:41:47, 16-Jun-20)
+Process 8 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17023314. (ODE time: .06 min; 19:41:48, 16-Jun-20)
+Process 87 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17293643. (ODE time: .06 min; 19:41:58, 16-Jun-20)
+Process 25 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17193161. (ODE time: .06 min; 19:42:00, 16-Jun-20)
+Process 49 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17870492. (ODE time: .06 min; 19:42:03, 16-Jun-20)
+Process 82 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17219488. (ODE time: .06 min; 19:42:03, 16-Jun-20)
+Process 57 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17166381. (ODE time: .06 min; 19:42:04, 16-Jun-20)
+Process 7 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18724606. (ODE time: .06 min; 19:42:11, 16-Jun-20)
+Process 10 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18043954. (ODE time: .06 min; 19:42:11, 16-Jun-20)
+Process 46 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19582903. (ODE time: .06 min; 19:42:12, 16-Jun-20)
+Process 36 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17309116. (ODE time: .07 min; 19:42:20, 16-Jun-20)
+Process 52 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17906156. (ODE time: .07 min; 19:42:22, 16-Jun-20)
+Process 80 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18888100. (ODE time: .07 min; 19:42:23, 16-Jun-20)
+Process 67 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18074236. (ODE time: .07 min; 19:42:24, 16-Jun-20)
+Process 65 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17621169. (ODE time: .07 min; 19:42:25, 16-Jun-20)
+Process 71 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18940103. (ODE time: .07 min; 19:42:25, 16-Jun-20)
+Process 51 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18727780. (ODE time: .07 min; 19:42:26, 16-Jun-20)
+Process 42 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18810721. (ODE time: .07 min; 19:42:27, 16-Jun-20)
+Process 85 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19426525. (ODE time: .07 min; 19:42:27, 16-Jun-20)
+Process 66 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18599005. (ODE time: .07 min; 19:42:29, 16-Jun-20)
+Process 86 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18185255. (ODE time: .07 min; 19:42:32, 16-Jun-20)
+Process 20 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19318452. (ODE time: .07 min; 19:42:32, 16-Jun-20)
+Process 54 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19624446. (ODE time: .07 min; 19:42:33, 16-Jun-20)
+Process 76 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18937442. (ODE time: .07 min; 19:42:33, 16-Jun-20)
+Process 22 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19521543. (ODE time: .07 min; 19:42:34, 16-Jun-20)
+Process 73 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18350404. (ODE time: .07 min; 19:42:36, 16-Jun-20)
+Process 34 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19328609. (ODE time: .07 min; 19:42:36, 16-Jun-20)
+Process 18 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17709022. (ODE time: .07 min; 19:42:37, 16-Jun-20)
+Process 79 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19519262. (ODE time: .07 min; 19:42:38, 16-Jun-20)
+Process 64 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 16883551. (ODE time: .07 min; 19:42:39, 16-Jun-20)
+Process 28 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19211422. (ODE time: .07 min; 19:42:41, 16-Jun-20)
+Process 6 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17359481. (ODE time: .07 min; 19:42:41, 16-Jun-20)
+Process 89 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18460300. (ODE time: .07 min; 19:42:45, 16-Jun-20)
+Process 62 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17845403. (ODE time: .07 min; 19:42:45, 16-Jun-20)
+Process 29 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19246561. (ODE time: .07 min; 19:42:46, 16-Jun-20)
+Process 77 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19245614. (ODE time: .07 min; 19:42:46, 16-Jun-20)
+Process 53 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19417843. (ODE time: .07 min; 19:42:47, 16-Jun-20)
+Process 13 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18601230. (ODE time: .07 min; 19:42:48, 16-Jun-20)
+Process 24 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 16608603. (ODE time: .07 min; 19:42:48, 16-Jun-20)
+Process 69 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19494249. (ODE time: .07 min; 19:42:49, 16-Jun-20)
+Process 14 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19451807. (ODE time: .07 min; 19:42:50, 16-Jun-20)
+Process 0 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18011900. (ODE time: .07 min; 19:42:52, 16-Jun-20)
+Process 63 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19479279. (ODE time: .07 min; 19:42:54, 16-Jun-20)
+Process 4 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19511469. (ODE time: .07 min; 19:42:56, 16-Jun-20)
+Process 21 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19058840. (ODE time: .07 min; 19:42:59, 16-Jun-20)
+Process 16 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19259937. (ODE time: .07 min; 19:42:59, 16-Jun-20)
+Process 56 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19134337. (ODE time: .07 min; 19:43:00, 16-Jun-20)
+Process 43 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19419192. (ODE time: .07 min; 19:43:00, 16-Jun-20)
+Process 81 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17677853. (ODE time: .07 min; 19:43:01, 16-Jun-20)
+Process 30 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18086134. (ODE time: .07 min; 19:43:01, 16-Jun-20)
+Process 41 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19120676. (ODE time: .07 min; 19:43:02, 16-Jun-20)
+Process 44 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19664740. (ODE time: .07 min; 19:43:03, 16-Jun-20)
+Process 50 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18566003. (ODE time: .07 min; 19:43:04, 16-Jun-20)
+Process 47 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 17874134. (ODE time: .07 min; 19:43:05, 16-Jun-20)
+Process 1 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 16989796. (ODE time: .07 min; 19:43:05, 16-Jun-20)
+Process 23 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19267313. (ODE time: .07 min; 19:43:06, 16-Jun-20)
+Process 78 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19722254. (ODE time: .07 min; 19:43:07, 16-Jun-20)
+Process 84 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19628597. (ODE time: .07 min; 19:43:08, 16-Jun-20)
+Process 74 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19004620. (ODE time: .07 min; 19:43:09, 16-Jun-20)
+Process 33 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19629733. (ODE time: .07 min; 19:43:11, 16-Jun-20)
+Process 31 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19556573. (ODE time: .08 min; 19:43:14, 16-Jun-20)
+Process 12 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18777191. (ODE time: .08 min; 19:43:14, 16-Jun-20)
+Process 38 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19200540. (ODE time: .08 min; 19:43:21, 16-Jun-20)
+Process 40 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19689205. (ODE time: .08 min; 19:43:23, 16-Jun-20)
+Process 35 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19142363. (ODE time: .08 min; 19:43:24, 16-Jun-20)
+Process 55 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19551795. (ODE time: .08 min; 19:43:24, 16-Jun-20)
+Process 2 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19483917. (ODE time: .08 min; 19:43:29, 16-Jun-20)
+Process 27 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19283022. (ODE time: .08 min; 19:43:29, 16-Jun-20)
+Process 88 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19262697. (ODE time: .08 min; 19:43:29, 16-Jun-20)
+Process 60 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19072002. (ODE time: .08 min; 19:43:30, 16-Jun-20)
+Process 70 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18932813. (ODE time: .08 min; 19:43:38, 16-Jun-20)
+Process 48 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 16736966. (ODE time: .08 min; 19:43:42, 16-Jun-20)
+Process 58 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19389790. (ODE time: .08 min; 19:43:42, 16-Jun-20)
+Process 72 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19349404. (ODE time: .08 min; 19:43:42, 16-Jun-20)
+Process 19 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19675703. (ODE time: .08 min; 19:43:45, 16-Jun-20)
+Process 68 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19725933. (ODE time: .08 min; 19:43:45, 16-Jun-20)
+Process 17 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19557644. (ODE time: .08 min; 19:43:48, 16-Jun-20)
+Process 3 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19148603. (ODE time: .08 min; 19:44:11, 16-Jun-20)
+Process 45 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18877387. (ODE time: .09 min; 19:44:24, 16-Jun-20)
+Process 5 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19374196. (ODE time: .09 min; 19:44:24, 16-Jun-20)
+Process 26 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19170167. (ODE time: .09 min; 19:44:31, 16-Jun-20)
+Process 83 after .1 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 18977899. (ODE time: .09 min; 19:44:38, 16-Jun-20)
+Process 37 after .2 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19430591. (ODE time: .09 min; 19:44:45, 16-Jun-20)
+Process 15 after .2 hrs, ODE integtrated 100 times (0 fail, 0 TO), fcnMax = 19512391. (ODE time: .10 min; 19:45:18, 16-Jun-20)
+Process 61 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 13813769. (ODE time: .05 min; 19:45:51, 16-Jun-20)
+Process 59 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18955780. (ODE time: .07 min; 19:47:30, 16-Jun-20)
+Process 32 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19097611. (ODE time: .07 min; 19:47:52, 16-Jun-20)
+Process 25 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 17221644. (ODE time: .06 min; 19:48:28, 16-Jun-20)
+Process 57 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18037490. (ODE time: .07 min; 19:48:39, 16-Jun-20)
+Process 8 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18630169. (ODE time: .07 min; 19:48:43, 16-Jun-20)
+Process 82 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18008720. (ODE time: .07 min; 19:48:45, 16-Jun-20)
+Process 75 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19648416. (ODE time: .07 min; 19:48:59, 16-Jun-20)
+Process 36 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18206065. (ODE time: .07 min; 19:49:01, 16-Jun-20)
+Process 39 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19408099. (ODE time: .08 min; 19:49:03, 16-Jun-20)
+Process 87 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19632394. (ODE time: .07 min; 19:49:22, 16-Jun-20)
+Process 0 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18257532. (ODE time: .07 min; 19:49:38, 16-Jun-20)
+Process 81 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18299504. (ODE time: .07 min; 19:49:47, 16-Jun-20)
+Process 65 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19342429. (ODE time: .07 min; 19:49:48, 16-Jun-20)
+Process 6 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19457997. (ODE time: .07 min; 19:49:51, 16-Jun-20)
+Process 64 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18536802. (ODE time: .07 min; 19:49:53, 16-Jun-20)
+Process 51 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19480043. (ODE time: .08 min; 19:49:58, 16-Jun-20)
+Process 86 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19562135. (ODE time: .08 min; 19:50:11, 16-Jun-20)
+Process 18 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 18154403. (ODE time: .08 min; 19:50:19, 16-Jun-20)
+Process 9 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19323696. (ODE time: .09 min; 19:50:27, 16-Jun-20)
+Process 42 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19656569. (ODE time: .08 min; 19:50:32, 16-Jun-20)
+Process 89 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19303064. (ODE time: .08 min; 19:50:38, 16-Jun-20)
+Process 49 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19463449. (ODE time: .09 min; 19:50:41, 16-Jun-20)
+Process 66 after .2 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19569908. (ODE time: .08 min; 19:50:42, 16-Jun-20)
+Process 11 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19056451. (ODE time: .09 min; 19:50:45, 16-Jun-20)
+Process 20 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19716521. (ODE time: .08 min; 19:50:46, 16-Jun-20)
+Process 76 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19672048. (ODE time: .08 min; 19:50:50, 16-Jun-20)
+Process 46 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19729424. (ODE time: .09 min; 19:50:51, 16-Jun-20)
+Process 48 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 17394212. (ODE time: .07 min; 19:50:54, 16-Jun-20)
+Process 10 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19356774. (ODE time: .09 min; 19:50:58, 16-Jun-20)
+Process 85 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19719326. (ODE time: .09 min; 19:51:00, 16-Jun-20)
+Process 67 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19346502. (ODE time: .09 min; 19:51:01, 16-Jun-20)
+Process 13 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19522039. (ODE time: .08 min; 19:51:01, 16-Jun-20)
+Process 69 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19719812. (ODE time: .08 min; 19:51:02, 16-Jun-20)
+Process 22 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19722300. (ODE time: .09 min; 19:51:05, 16-Jun-20)
+Process 80 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19584579. (ODE time: .09 min; 19:51:07, 16-Jun-20)
+Process 73 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19490358. (ODE time: .09 min; 19:51:18, 16-Jun-20)
+Process 29 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19652810. (ODE time: .09 min; 19:51:21, 16-Jun-20)
+Process 53 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19700124. (ODE time: .09 min; 19:51:23, 16-Jun-20)
+Process 54 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19704963. (ODE time: .09 min; 19:51:24, 16-Jun-20)
+Process 77 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19658912. (ODE time: .09 min; 19:51:27, 16-Jun-20)
+Process 52 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19431860. (ODE time: .09 min; 19:51:27, 16-Jun-20)
+Process 28 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19485883. (ODE time: .09 min; 19:51:27, 16-Jun-20)
+Process 79 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19724310. (ODE time: .09 min; 19:51:30, 16-Jun-20)
+Process 4 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19652242. (ODE time: .09 min; 19:51:30, 16-Jun-20)
+Process 50 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19374347. (ODE time: .08 min; 19:51:31, 16-Jun-20)
+Process 47 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19598990. (ODE time: .08 min; 19:51:31, 16-Jun-20)
+Process 34 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19726200. (ODE time: .09 min; 19:51:45, 16-Jun-20)
+Process 71 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19698796. (ODE time: .09 min; 19:51:46, 16-Jun-20)
+Process 33 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19692989. (ODE time: .09 min; 19:51:47, 16-Jun-20)
+Process 44 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19717172. (ODE time: .09 min; 19:51:47, 16-Jun-20)
+Process 35 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19716737. (ODE time: .08 min; 19:51:51, 16-Jun-20)
+Process 40 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19731028. (ODE time: .08 min; 19:51:51, 16-Jun-20)
+Process 12 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19550995. (ODE time: .09 min; 19:51:53, 16-Jun-20)
+Process 62 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19276625. (ODE time: .09 min; 19:51:54, 16-Jun-20)
+Process 14 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19707671. (ODE time: .09 min; 19:51:55, 16-Jun-20)
+Process 23 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19476726. (ODE time: .09 min; 19:51:56, 16-Jun-20)
+Process 74 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19386775. (ODE time: .09 min; 19:51:59, 16-Jun-20)
+Process 84 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19714671. (ODE time: .09 min; 19:52:08, 16-Jun-20)
+Process 31 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19667620. (ODE time: .09 min; 19:52:10, 16-Jun-20)
+Process 63 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19655699. (ODE time: .09 min; 19:52:14, 16-Jun-20)
+Process 55 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19720901. (ODE time: .09 min; 19:52:14, 16-Jun-20)
+Process 38 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19628245. (ODE time: .09 min; 19:52:16, 16-Jun-20)
+Process 68 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19735308. (ODE time: .09 min; 19:52:20, 16-Jun-20)
+Process 24 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19132769. (ODE time: .10 min; 19:52:22, 16-Jun-20)
+Process 19 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19730345. (ODE time: .09 min; 19:52:23, 16-Jun-20)
+Process 60 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19526131. (ODE time: .09 min; 19:52:25, 16-Jun-20)
+Process 88 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19555639. (ODE time: .09 min; 19:52:26, 16-Jun-20)
+Process 45 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19506751. (ODE time: .08 min; 19:52:30, 16-Jun-20)
+Process 17 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19700772. (ODE time: .09 min; 19:52:35, 16-Jun-20)
+Process 1 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19289322. (ODE time: .10 min; 19:52:36, 16-Jun-20)
+Process 21 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19514686. (ODE time: .10 min; 19:52:38, 16-Jun-20)
+Process 56 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19389977. (ODE time: .10 min; 19:52:41, 16-Jun-20)
+Process 72 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19679322. (ODE time: .09 min; 19:52:42, 16-Jun-20)
+Process 30 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19317299. (ODE time: .10 min; 19:52:50, 16-Jun-20)
+Process 58 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19669514. (ODE time: .09 min; 19:52:50, 16-Jun-20)
+Process 2 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19682156. (ODE time: .10 min; 19:53:04, 16-Jun-20)
+Process 7 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19225664. (ODE time: .11 min; 19:53:05, 16-Jun-20)
+Process 5 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19625306. (ODE time: .09 min; 19:53:09, 16-Jun-20)
+Process 26 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19706654. (ODE time: .09 min; 19:53:11, 16-Jun-20)
+Process 27 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19692149. (ODE time: .10 min; 19:53:19, 16-Jun-20)
+Process 70 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19426226. (ODE time: .10 min; 19:53:23, 16-Jun-20)
+Process 43 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19632089. (ODE time: .11 min; 19:53:36, 16-Jun-20)
+Process 41 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19399151. (ODE time: .11 min; 19:53:40, 16-Jun-20)
+Process 16 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19596327. (ODE time: .11 min; 19:53:52, 16-Jun-20)
+Process 83 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19591113. (ODE time: .10 min; 19:54:18, 16-Jun-20)
+Process 15 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19660546. (ODE time: .10 min; 19:55:03, 16-Jun-20)
+Process 3 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19394448. (ODE time: .11 min; 19:55:05, 16-Jun-20)
+Process 25 after .3 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 18820715. (ODE time: .07 min; 19:55:11, 16-Jun-20)
+Process 37 after .3 hrs, ODE integtrated 200 times (0 fail, 0 TO), fcnMax = 19583479. (ODE time: .11 min; 19:55:36, 16-Jun-20)
+Process 57 after .3 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 18208801. (ODE time: .07 min; 19:55:38, 16-Jun-20)
+Process 32 after .3 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19503776. (ODE time: .08 min; 19:56:19, 16-Jun-20)
+Process 0 after .3 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 18318856. (ODE time: .07 min; 19:56:26, 16-Jun-20)
+Process 36 after .3 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19590739. (ODE time: .08 min; 19:56:37, 16-Jun-20)
+Process 59 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19245008. (ODE time: .09 min; 19:56:57, 16-Jun-20)
+Process 81 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19472806. (ODE time: .08 min; 19:57:20, 16-Jun-20)
+Process 48 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 18602579. (ODE time: .07 min; 19:57:43, 16-Jun-20)
+Process 8 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19522917. (ODE time: .09 min; 19:57:50, 16-Jun-20)
+Process 75 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19710676. (ODE time: .09 min; 19:58:04, 16-Jun-20)
+Process 65 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19574809. (ODE time: .08 min; 19:58:05, 16-Jun-20)
+Process 87 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19734551. (ODE time: .09 min; 19:58:09, 16-Jun-20)
+Process 39 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19713350. (ODE time: .09 min; 19:58:09, 16-Jun-20)
+Process 64 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19649367. (ODE time: .08 min; 19:58:15, 16-Jun-20)
+Process 6 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19722611. (ODE time: .09 min; 19:58:22, 16-Jun-20)
+Process 51 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19720857. (ODE time: .09 min; 19:58:29, 16-Jun-20)
+Process 18 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19549639. (ODE time: .08 min; 19:58:43, 16-Jun-20)
+Process 86 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19633706. (ODE time: .09 min; 19:59:12, 16-Jun-20)
+Process 20 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19732639. (ODE time: .09 min; 19:59:18, 16-Jun-20)
+Process 9 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19696060. (ODE time: .09 min; 19:59:18, 16-Jun-20)
+Process 49 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19570356. (ODE time: .09 min; 19:59:18, 16-Jun-20)
+Process 67 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19625037. (ODE time: .08 min; 19:59:19, 16-Jun-20)
+Process 13 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19631713. (ODE time: .08 min; 19:59:21, 16-Jun-20)
+Process 22 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19734503. (ODE time: .08 min; 19:59:29, 16-Jun-20)
+Process 89 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19573842. (ODE time: .09 min; 19:59:34, 16-Jun-20)
+Process 42 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19714678. (ODE time: .09 min; 19:59:35, 16-Jun-20)
+Process 76 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19701788. (ODE time: .09 min; 19:59:36, 16-Jun-20)
+Process 80 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19705361. (ODE time: .09 min; 19:59:46, 16-Jun-20)
+Process 10 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19657730. (ODE time: .09 min; 19:59:48, 16-Jun-20)
+Process 66 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19640653. (ODE time: .09 min; 19:59:48, 16-Jun-20)
+Process 77 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19716991. (ODE time: .08 min; 19:59:52, 16-Jun-20)
+Process 4 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19718468. (ODE time: .08 min; 19:59:53, 16-Jun-20)
+Process 29 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19718786. (ODE time: .09 min; 19:59:54, 16-Jun-20)
+Process 73 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19544113. (ODE time: .09 min; 19:59:58, 16-Jun-20)
+Process 54 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19732544. (ODE time: .09 min; 20:00:02, 16-Jun-20)
+Process 53 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19727900. (ODE time: .09 min; 20:00:04, 16-Jun-20)
+Process 28 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19552509. (ODE time: .09 min; 20:00:05, 16-Jun-20)
+Process 47 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19728062. (ODE time: .09 min; 20:00:10, 16-Jun-20)
+Process 40 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19734228. (ODE time: .08 min; 20:00:13, 16-Jun-20)
+Process 52 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19649494. (ODE time: .09 min; 20:00:15, 16-Jun-20)
+Process 12 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19651807. (ODE time: .08 min; 20:00:21, 16-Jun-20)
+Process 50 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19550227. (ODE time: .09 min; 20:00:23, 16-Jun-20)
+Process 71 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19731762. (ODE time: .09 min; 20:00:26, 16-Jun-20)
+Process 35 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19732153. (ODE time: .09 min; 20:00:27, 16-Jun-20)
+Process 74 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19645931. (ODE time: .08 min; 20:00:28, 16-Jun-20)
+Process 34 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19734438. (ODE time: .09 min; 20:00:29, 16-Jun-20)
+Process 44 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19733445. (ODE time: .09 min; 20:00:34, 16-Jun-20)
+Process 33 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19731370. (ODE time: .09 min; 20:00:34, 16-Jun-20)
+Process 62 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19428425. (ODE time: .09 min; 20:00:35, 16-Jun-20)
+Process 23 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19571639. (ODE time: .09 min; 20:00:36, 16-Jun-20)
+Process 19 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19735320. (ODE time: .08 min; 20:00:47, 16-Jun-20)
+Process 14 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19720502. (ODE time: .09 min; 20:00:48, 16-Jun-20)
+Process 60 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19690839. (ODE time: .08 min; 20:00:48, 16-Jun-20)
+Process 11 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19364006. (ODE time: .10 min; 20:00:49, 16-Jun-20)
+Process 55 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19731837. (ODE time: .09 min; 20:00:54, 16-Jun-20)
+Process 84 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19723086. (ODE time: .09 min; 20:00:56, 16-Jun-20)
+Process 31 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19721619. (ODE time: .09 min; 20:01:10, 16-Jun-20)
+Process 45 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19696576. (ODE time: .09 min; 20:01:11, 16-Jun-20)
+Process 72 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19726558. (ODE time: .08 min; 20:01:12, 16-Jun-20)
+Process 58 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19722018. (ODE time: .08 min; 20:01:13, 16-Jun-20)
+Process 63 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19710860. (ODE time: .09 min; 20:01:16, 16-Jun-20)
+Process 88 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19678604. (ODE time: .09 min; 20:01:18, 16-Jun-20)
+Process 56 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19507690. (ODE time: .09 min; 20:01:19, 16-Jun-20)
+Process 17 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19731314. (ODE time: .09 min; 20:01:19, 16-Jun-20)
+Process 21 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19610505. (ODE time: .09 min; 20:01:19, 16-Jun-20)
+Process 24 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19446125. (ODE time: .09 min; 20:01:21, 16-Jun-20)
+Process 38 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19720290. (ODE time: .09 min; 20:01:22, 16-Jun-20)
+Process 5 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19703677. (ODE time: .09 min; 20:01:42, 16-Jun-20)
+Process 27 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19732745. (ODE time: .08 min; 20:01:43, 16-Jun-20)
+Process 70 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19566030. (ODE time: .08 min; 20:01:43, 16-Jun-20)
+Process 26 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19725341. (ODE time: .09 min; 20:01:48, 16-Jun-20)
+Process 2 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19733432. (ODE time: .09 min; 20:01:57, 16-Jun-20)
+Process 43 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19731394. (ODE time: .09 min; 20:02:19, 16-Jun-20)
+Process 1 after .4 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19441506. (ODE time: .10 min; 20:02:26, 16-Jun-20)
+Process 30 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19398933. (ODE time: .10 min; 20:02:47, 16-Jun-20)
+Process 83 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19680977. (ODE time: .09 min; 20:02:59, 16-Jun-20)
+Process 7 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19470493. (ODE time: .10 min; 20:03:07, 16-Jun-20)
+Process 25 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19687502. (ODE time: .08 min; 20:03:21, 16-Jun-20)
+Process 0 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 18394514. (ODE time: .07 min; 20:03:24, 16-Jun-20)
+Process 15 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19728997. (ODE time: .09 min; 20:03:51, 16-Jun-20)
+Process 3 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19715162. (ODE time: .09 min; 20:04:11, 16-Jun-20)
+Process 41 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19420627. (ODE time: .11 min; 20:04:19, 16-Jun-20)
+Process 16 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19600936. (ODE time: .11 min; 20:04:39, 16-Jun-20)
+Process 57 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19224726. (ODE time: .09 min; 20:04:50, 16-Jun-20)
+Process 48 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 18664647. (ODE time: .07 min; 20:05:02, 16-Jun-20)
+Process 32 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19684942. (ODE time: .09 min; 20:05:07, 16-Jun-20)
+Process 36 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19665456. (ODE time: .09 min; 20:05:28, 16-Jun-20)
+Process 81 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19640676. (ODE time: .08 min; 20:05:43, 16-Jun-20)
+Process 37 after .5 hrs, ODE integtrated 300 times (0 fail, 0 TO), fcnMax = 19644896. (ODE time: .10 min; 20:05:47, 16-Jun-20)
+Process 8 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19634763. (ODE time: .09 min; 20:06:27, 16-Jun-20)
+Process 64 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19715882. (ODE time: .08 min; 20:06:28, 16-Jun-20)
+Process 39 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734658. (ODE time: .09 min; 20:06:39, 16-Jun-20)
+Process 65 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19594282. (ODE time: .09 min; 20:06:41, 16-Jun-20)
+Process 75 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19732838. (ODE time: .09 min; 20:06:43, 16-Jun-20)
+Process 59 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19463682. (ODE time: .10 min; 20:06:50, 16-Jun-20)
+Process 6 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19733127. (ODE time: .09 min; 20:06:54, 16-Jun-20)
+Process 51 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19731867. (ODE time: .09 min; 20:07:00, 16-Jun-20)
+Process 20 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19735732. (ODE time: .08 min; 20:07:45, 16-Jun-20)
+Process 13 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19697361. (ODE time: .08 min; 20:07:46, 16-Jun-20)
+Process 18 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19693734. (ODE time: .09 min; 20:07:47, 16-Jun-20)
+Process 9 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19733355. (ODE time: .09 min; 20:07:52, 16-Jun-20)
+Process 49 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19662452. (ODE time: .09 min; 20:07:54, 16-Jun-20)
+Process 89 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19676085. (ODE time: .08 min; 20:07:56, 16-Jun-20)
+Process 67 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19733007. (ODE time: .09 min; 20:07:58, 16-Jun-20)
+Process 10 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19723772. (ODE time: .08 min; 20:08:12, 16-Jun-20)
+Process 80 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19717750. (ODE time: .08 min; 20:08:14, 16-Jun-20)
+Process 76 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19728011. (ODE time: .09 min; 20:08:15, 16-Jun-20)
+Process 86 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19716437. (ODE time: .09 min; 20:08:19, 16-Jun-20)
+Process 29 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19733214. (ODE time: .08 min; 20:08:20, 16-Jun-20)
+Process 73 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19564672. (ODE time: .08 min; 20:08:22, 16-Jun-20)
+Process 42 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19733568. (ODE time: .09 min; 20:08:32, 16-Jun-20)
+Process 47 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734976. (ODE time: .08 min; 20:08:32, 16-Jun-20)
+Process 66 after .5 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19698956. (ODE time: .09 min; 20:08:33, 16-Jun-20)
+Process 74 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19712663. (ODE time: .08 min; 20:08:47, 16-Jun-20)
+Process 28 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19642476. (ODE time: .09 min; 20:08:47, 16-Jun-20)
+Process 52 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19681447. (ODE time: .09 min; 20:08:53, 16-Jun-20)
+Process 35 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734700. (ODE time: .08 min; 20:08:55, 16-Jun-20)
+Process 12 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19684351. (ODE time: .09 min; 20:09:00, 16-Jun-20)
+Process 50 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19653528. (ODE time: .09 min; 20:09:01, 16-Jun-20)
+Process 23 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19635641. (ODE time: .09 min; 20:09:06, 16-Jun-20)
+Process 60 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19711037. (ODE time: .08 min; 20:09:07, 16-Jun-20)
+Process 62 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19721157. (ODE time: .09 min; 20:09:23, 16-Jun-20)
+Process 31 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19732206. (ODE time: .09 min; 20:09:43, 16-Jun-20)
+Process 17 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734595. (ODE time: .08 min; 20:09:49, 16-Jun-20)
+Process 56 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19590500. (ODE time: .09 min; 20:09:49, 16-Jun-20)
+Process 21 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19653879. (ODE time: .09 min; 20:09:50, 16-Jun-20)
+Process 88 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19708313. (ODE time: .09 min; 20:09:50, 16-Jun-20)
+Process 38 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734819. (ODE time: .08 min; 20:09:50, 16-Jun-20)
+Process 45 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19731211. (ODE time: .09 min; 20:09:52, 16-Jun-20)
+Process 24 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19566877. (ODE time: .09 min; 20:09:55, 16-Jun-20)
+Process 63 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19726626. (ODE time: .09 min; 20:10:05, 16-Jun-20)
+Process 5 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19732244. (ODE time: .09 min; 20:10:12, 16-Jun-20)
+Process 27 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19735482. (ODE time: .08 min; 20:10:13, 16-Jun-20)
+Process 26 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19732937. (ODE time: .09 min; 20:10:21, 16-Jun-20)
+Process 70 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19690959. (ODE time: .09 min; 20:10:31, 16-Jun-20)
+Process 43 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19735447. (ODE time: .08 min; 20:10:43, 16-Jun-20)
+Process 11 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19422303. (ODE time: .10 min; 20:10:45, 16-Jun-20)
+Process 0 after .6 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19497267. (ODE time: .08 min; 20:10:58, 16-Jun-20)
+Process 1 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19466570. (ODE time: .09 min; 20:11:24, 16-Jun-20)
+Process 83 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19709594. (ODE time: .09 min; 20:11:31, 16-Jun-20)
+Process 7 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19676305. (ODE time: .08 min; 20:11:32, 16-Jun-20)
+Process 25 after .6 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19734408. (ODE time: .09 min; 20:11:57, 16-Jun-20)
+Process 48 after .6 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 18748477. (ODE time: .07 min; 20:12:23, 16-Jun-20)
+Process 15 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734736. (ODE time: .09 min; 20:12:26, 16-Jun-20)
+Process 30 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19557694. (ODE time: .10 min; 20:12:30, 16-Jun-20)
+Process 3 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19734157. (ODE time: .08 min; 20:12:34, 16-Jun-20)
+Process 41 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19669900. (ODE time: .09 min; 20:13:36, 16-Jun-20)
+Process 32 after .6 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19700774. (ODE time: .09 min; 20:13:38, 16-Jun-20)
+Process 36 after .6 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19687960. (ODE time: .08 min; 20:13:55, 16-Jun-20)
+Process 37 after .6 hrs, ODE integtrated 400 times (0 fail, 0 TO), fcnMax = 19726512. (ODE time: .09 min; 20:14:28, 16-Jun-20)
+Process 57 after .6 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19412096. (ODE time: .10 min; 20:14:42, 16-Jun-20)
+Process 64 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19735061. (ODE time: .08 min; 20:14:51, 16-Jun-20)
+Process 81 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19719647. (ODE time: .09 min; 20:14:54, 16-Jun-20)
+Process 8 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19709063. (ODE time: .09 min; 20:14:59, 16-Jun-20)
+Process 65 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19666490. (ODE time: .09 min; 20:15:42, 16-Jun-20)
+Process 13 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19723727. (ODE time: .08 min; 20:16:11, 16-Jun-20)
+Process 49 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19695077. (ODE time: .08 min; 20:16:13, 16-Jun-20)
+Process 89 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19702437. (ODE time: .08 min; 20:16:23, 16-Jun-20)
+Process 18 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19730156. (ODE time: .09 min; 20:16:32, 16-Jun-20)
+Process 73 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19693184. (ODE time: .08 min; 20:16:39, 16-Jun-20)
+Process 10 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19735831. (ODE time: .09 min; 20:16:43, 16-Jun-20)
+Process 86 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19733429. (ODE time: .09 min; 20:16:49, 16-Jun-20)
+Process 66 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19726040. (ODE time: .09 min; 20:17:05, 16-Jun-20)
+Process 74 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19719223. (ODE time: .08 min; 20:17:16, 16-Jun-20)
+Process 28 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19672168. (ODE time: .09 min; 20:17:20, 16-Jun-20)
+Process 59 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19497732. (ODE time: .11 min; 20:17:27, 16-Jun-20)
+Process 52 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19714224. (ODE time: .09 min; 20:17:28, 16-Jun-20)
+Process 50 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19730485. (ODE time: .09 min; 20:17:36, 16-Jun-20)
+Process 56 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19610273. (ODE time: .08 min; 20:17:51, 16-Jun-20)
+Process 23 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19679162. (ODE time: .09 min; 20:17:52, 16-Jun-20)
+Process 62 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19735057. (ODE time: .09 min; 20:17:57, 16-Jun-20)
+Process 21 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19688863. (ODE time: .08 min; 20:18:08, 16-Jun-20)
+Process 24 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19629851. (ODE time: .09 min; 20:18:27, 16-Jun-20)
+Process 63 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19735065. (ODE time: .09 min; 20:18:41, 16-Jun-20)
+Process 70 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19718663. (ODE time: .09 min; 20:19:04, 16-Jun-20)
+Process 48 after .7 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 18819478. (ODE time: .07 min; 20:19:47, 16-Jun-20)
+Process 83 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19720637. (ODE time: .08 min; 20:19:50, 16-Jun-20)
+Process 7 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19714170. (ODE time: .08 min; 20:19:50, 16-Jun-20)
+Process 1 after .7 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19505669. (ODE time: .09 min; 20:20:06, 16-Jun-20)
+Process 0 after .7 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19684265. (ODE time: .09 min; 20:20:07, 16-Jun-20)
+Process 11 after .8 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19473516. (ODE time: .10 min; 20:21:05, 16-Jun-20)
+Process 30 after .8 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19718508. (ODE time: .09 min; 20:21:14, 16-Jun-20)
+Process 41 after .8 hrs, ODE integtrated 500 times (0 fail, 0 TO), fcnMax = 19708479. (ODE time: .08 min; 20:21:54, 16-Jun-20)
+Process 36 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19701133. (ODE time: .08 min; 20:22:18, 16-Jun-20)
+Process 8 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19730162. (ODE time: .08 min; 20:23:26, 16-Jun-20)
+Process 81 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19726266. (ODE time: .09 min; 20:23:28, 16-Jun-20)
+Process 49 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19703852. (ODE time: .08 min; 20:24:35, 16-Jun-20)
+Process 89 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19728650. (ODE time: .09 min; 20:25:04, 16-Jun-20)
+Process 57 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19503271. (ODE time: .10 min; 20:25:04, 16-Jun-20)
+Process 73 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19716384. (ODE time: .09 min; 20:25:09, 16-Jun-20)
+Process 66 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19735338. (ODE time: .08 min; 20:25:31, 16-Jun-20)
+Process 74 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19723419. (ODE time: .09 min; 20:25:48, 16-Jun-20)
+Process 28 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19705003. (ODE time: .09 min; 20:25:52, 16-Jun-20)
+Process 50 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19734309. (ODE time: .08 min; 20:25:58, 16-Jun-20)
+Process 56 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19644241. (ODE time: .08 min; 20:26:09, 16-Jun-20)
+Process 52 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19728257. (ODE time: .09 min; 20:26:17, 16-Jun-20)
+Process 23 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19712971. (ODE time: .09 min; 20:26:31, 16-Jun-20)
+Process 21 after .8 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19705669. (ODE time: .08 min; 20:26:31, 16-Jun-20)
+Process 24 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19681410. (ODE time: .09 min; 20:27:08, 16-Jun-20)
+Process 48 after .9 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19117819. (ODE time: .08 min; 20:27:22, 16-Jun-20)
+Process 70 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19730300. (ODE time: .09 min; 20:28:01, 16-Jun-20)
+Process 83 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19726767. (ODE time: .08 min; 20:28:12, 16-Jun-20)
+Process 7 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19717105. (ODE time: .08 min; 20:28:16, 16-Jun-20)
+Process 1 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19601652. (ODE time: .09 min; 20:28:49, 16-Jun-20)
+Process 0 after .9 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19725015. (ODE time: .09 min; 20:29:03, 16-Jun-20)
+Process 30 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19730512. (ODE time: .09 min; 20:29:52, 16-Jun-20)
+Process 36 after .9 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19710460. (ODE time: .08 min; 20:30:43, 16-Jun-20)
+Process 11 after .9 hrs, ODE integtrated 600 times (0 fail, 0 TO), fcnMax = 19513438. (ODE time: .11 min; 20:31:43, 16-Jun-20)
+Process 8 after .9 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19734566. (ODE time: .08 min; 20:31:53, 16-Jun-20)
+Process 81 after .9 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19735538. (ODE time: .09 min; 20:32:00, 16-Jun-20)
+Process 49 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19711181. (ODE time: .08 min; 20:33:05, 16-Jun-20)
+Process 89 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19734392. (ODE time: .08 min; 20:33:31, 16-Jun-20)
+Process 73 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19722068. (ODE time: .08 min; 20:33:36, 16-Jun-20)
+Process 28 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19724389. (ODE time: .08 min; 20:34:09, 16-Jun-20)
+Process 56 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19689116. (ODE time: .09 min; 20:34:51, 16-Jun-20)
+Process 21 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19722577. (ODE time: .08 min; 20:34:54, 16-Jun-20)
+Process 52 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19735681. (ODE time: .09 min; 20:34:57, 16-Jun-20)
+Process 57 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19648559. (ODE time: .10 min; 20:34:57, 16-Jun-20)
+Process 23 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19723661. (ODE time: .08 min; 20:35:00, 16-Jun-20)
+Process 48 after 1.0 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19208756. (ODE time: .08 min; 20:35:13, 16-Jun-20)
+Process 24 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19701207. (ODE time: .09 min; 20:35:41, 16-Jun-20)
+Process 1 after 1.0 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19666829. (ODE time: .09 min; 20:37:25, 16-Jun-20)
+Process 0 after 1.0 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19732779. (ODE time: .09 min; 20:37:35, 16-Jun-20)
+Process 36 after 1.1 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19722526. (ODE time: .08 min; 20:39:08, 16-Jun-20)
+Process 49 after 1.1 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19724593. (ODE time: .08 min; 20:41:32, 16-Jun-20)
+Process 73 after 1.1 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19725638. (ODE time: .08 min; 20:41:59, 16-Jun-20)
+Process 11 after 1.1 hrs, ODE integtrated 700 times (0 fail, 0 TO), fcnMax = 19572084. (ODE time: .11 min; 20:42:30, 16-Jun-20)
+Process 56 after 1.1 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19711847. (ODE time: .08 min; 20:43:14, 16-Jun-20)
+Process 57 after 1.1 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19714991. (ODE time: .09 min; 20:43:44, 16-Jun-20)
+Process 24 after 1.1 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19726288. (ODE time: .09 min; 20:44:23, 16-Jun-20)
+Process 1 after 1.2 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19728549. (ODE time: .09 min; 20:46:02, 16-Jun-20)
+Process 49 after 1.2 hrs, ODE integtrated 900 times (0 fail, 0 TO), fcnMax = 19730767. (ODE time: .08 min; 20:49:57, 16-Jun-20)
+Process 56 after 1.3 hrs, ODE integtrated 900 times (0 fail, 0 TO), fcnMax = 19715945. (ODE time: .08 min; 20:51:33, 16-Jun-20)
+Process 57 after 1.3 hrs, ODE integtrated 900 times (0 fail, 0 TO), fcnMax = 19730906. (ODE time: .08 min; 20:52:11, 16-Jun-20)
+Process 11 after 1.3 hrs, ODE integtrated 800 times (0 fail, 0 TO), fcnMax = 19623926. (ODE time: .11 min; 20:53:09, 16-Jun-20)
+Process 11 after 1.4 hrs, ODE integtrated 900 times (0 fail, 0 TO), fcnMax = 19716630. (ODE time: .09 min; 21:02:17, 16-Jun-20)
+
+hyperBOB optimization finished at at 21:08:19, 16-Jun-20 taking 1.54 hrs
+   Total number of ODE integrations: 46007
+   Process 81 found best solution: 19735851.
+ 
+   Process 0 bestEP = 19732781. after 806 fcn calls
+   Process 1 bestEP = 19734962. after 870 fcn calls
+   Process 2 bestEP = 19735503. after 379 fcn calls
+   Process 3 bestEP = 19734914. after 457 fcn calls
+   Process 4 bestEP = 19733979. after 376 fcn calls
+   Process 5 bestEP = 19735214. after 493 fcn calls
+   Process 6 bestEP = 19733422. after 431 fcn calls
+   Process 7 bestEP = 19717105. after 605 fcn calls
+   Process 8 bestEP = 19734621. after 728 fcn calls
+   Process 9 bestEP = 19733962. after 442 fcn calls
+   Process 10 bestEP = 19735831. after 518 fcn calls
+   Process 11 bestEP = 19732041. after 971 fcn calls
+   Process 12 bestEP = 19703938. after 496 fcn calls
+   Process 13 bestEP = 19728080. after 583 fcn calls
+   Process 14 bestEP = 19721533. after 359 fcn calls
+   Process 15 bestEP = 19734761. after 411 fcn calls
+   Process 16 bestEP = 19600936. after 308 fcn calls
+   Process 17 bestEP = 19734604. after 409 fcn calls
+   Process 18 bestEP = 19734249. after 570 fcn calls
+   Process 19 bestEP = 19735471. after 334 fcn calls
+   Process 20 bestEP = 19735732. after 405 fcn calls
+   Process 21 bestEP = 19723184. after 747 fcn calls
+   Process 22 bestEP = 19734594. after 325 fcn calls
+   Process 23 bestEP = 19723902. after 734 fcn calls
+   Process 24 bestEP = 19728662. after 864 fcn calls
+   Process 25 bestEP = 19735359. after 556 fcn calls
+   Process 26 bestEP = 19734870. after 464 fcn calls
+   Process 27 bestEP = 19735482. after 421 fcn calls
+   Process 28 bestEP = 19732593. after 777 fcn calls
+   Process 29 bestEP = 19735589. after 484 fcn calls
+   Process 30 bestEP = 19730775. after 626 fcn calls
+   Process 31 bestEP = 19732267. after 419 fcn calls
+   Process 32 bestEP = 19701185. after 535 fcn calls
+   Process 33 bestEP = 19734861. after 378 fcn calls
+   Process 34 bestEP = 19734441. after 316 fcn calls
+   Process 35 bestEP = 19734700. after 413 fcn calls
+   Process 36 bestEP = 19722772. after 842 fcn calls
+   Process 37 bestEP = 19727599. after 442 fcn calls
+   Process 38 bestEP = 19734894. after 429 fcn calls
+   Process 39 bestEP = 19734658. after 400 fcn calls
+   Process 40 bestEP = 19735282. after 352 fcn calls
+   Process 41 bestEP = 19712923. after 576 fcn calls
+   Process 42 bestEP = 19733905. after 443 fcn calls
+   Process 43 bestEP = 19735447. after 412 fcn calls
+   Process 44 bestEP = 19733728. after 341 fcn calls
+   Process 45 bestEP = 19734218. after 444 fcn calls
+   Process 46 bestEP = 19730898. after 255 fcn calls
+   Process 47 bestEP = 19735146. after 441 fcn calls
+   Process 48 bestEP = 19233946. after 861 fcn calls
+   Process 49 bestEP = 19732285. after 936 fcn calls
+   Process 50 bestEP = 19734627. after 638 fcn calls
+   Process 51 bestEP = 19731971. after 424 fcn calls
+   Process 52 bestEP = 19735781. after 729 fcn calls
+   Process 53 bestEP = 19734881. after 392 fcn calls
+   Process 54 bestEP = 19733078. after 334 fcn calls
+   Process 55 bestEP = 19735116. after 377 fcn calls
+   Process 56 bestEP = 19716303. after 934 fcn calls
+   Process 57 bestEP = 19733712. after 958 fcn calls
+   Process 58 bestEP = 19735221. after 385 fcn calls
+   Process 59 bestEP = 19499732. after 564 fcn calls
+   Process 60 bestEP = 19713416. after 474 fcn calls
+   Process 61 bestEP = 13832132. after 253 fcn calls
+   Process 62 bestEP = 19735057. after 502 fcn calls
+   Process 63 bestEP = 19735150. after 523 fcn calls
+   Process 64 bestEP = 19735191. after 535 fcn calls
+   Process 65 bestEP = 19702630. after 591 fcn calls
+   Process 66 bestEP = 19735350. after 628 fcn calls
+   Process 67 bestEP = 19734733. after 463 fcn calls
+   Process 68 bestEP = 19735316. after 212 fcn calls
+   Process 69 bestEP = 19731251. after 292 fcn calls
+   Process 70 bestEP = 19730479. after 630 fcn calls
+   Process 71 bestEP = 19734717. after 387 fcn calls
+   Process 72 bestEP = 19731625. after 395 fcn calls
+   Process 73 bestEP = 19725638. after 802 fcn calls
+   Process 74 bestEP = 19723421. after 616 fcn calls
+   Process 75 bestEP = 19735540. after 498 fcn calls
+   Process 76 bestEP = 19735755. after 475 fcn calls
+   Process 77 bestEP = 19727166. after 388 fcn calls
+   Process 78 bestEP = 19734577. after 199 fcn calls
+   Process 79 bestEP = 19735372. after 287 fcn calls
+   Process 80 bestEP = 19720510. after 488 fcn calls
+   Process 81 bestEP = 19735851. after 751 fcn calls
+   Process 82 bestEP = 18011346. after 272 fcn calls
+   Process 83 bestEP = 19728339. after 663 fcn calls
+   Process 84 bestEP = 19725367. after 376 fcn calls
+   Process 85 bestEP = 19734548. after 297 fcn calls
+   Process 86 bestEP = 19733429. after 500 fcn calls
+   Process 87 bestEP = 19734843. after 342 fcn calls
+   Process 88 bestEP = 19713253. after 499 fcn calls
+   Process 89 bestEP = 19735616. after 750 fcn calls
+
+Storing all ODE solutions...
+Process 61 ODE solution time: .11 (min)
+Process 82 ODE solution time: .10 (min)
+Process 48 ODE solution time: .12 (min)
+Process 59 ODE solution time: .17 (min)
+Process 16 ODE solution time: .17 (min)
+Process 32 ODE solution time: .12 (min)
+Process 65 ODE solution time: .13 (min)
+Process 12 ODE solution time: .12 (min)
+Process 41 ODE solution time: .13 (min)
+Process 88 ODE solution time: .13 (min)
+Process 60 ODE solution time: .13 (min)
+Process 56 ODE solution time: .13 (min)
+Process 7 ODE solution time: .13 (min)
+Process 80 ODE solution time: .13 (min)
+Process 14 ODE solution time: .13 (min)
+Process 36 ODE solution time: .12 (min)
+Process 21 ODE solution time: .13 (min)
+Process 74 ODE solution time: .13 (min)
+Process 23 ODE solution time: .13 (min)
+Process 84 ODE solution time: .13 (min)
+Process 73 ODE solution time: .13 (min)
+Process 77 ODE solution time: .13 (min)
+Process 37 ODE solution time: .13 (min)
+Process 13 ODE solution time: .12 (min)
+Process 83 ODE solution time: .13 (min)
+Process 24 ODE solution time: .13 (min)
+Process 70 ODE solution time: .13 (min)
+Process 30 ODE solution time: .13 (min)
+Process 46 ODE solution time: .13 (min)
+Process 69 ODE solution time: .13 (min)
+Process 72 ODE solution time: .13 (min)
+Process 51 ODE solution time: .13 (min)
+Process 11 ODE solution time: .13 (min)
+Process 31 ODE solution time: .13 (min)
+Process 49 ODE solution time: .13 (min)
+Process 28 ODE solution time: .13 (min)
+Process 0 ODE solution time: .13 (min)
+Process 54 ODE solution time: .13 (min)
+Process 6 ODE solution time: .13 (min)
+Process 86 ODE solution time: .13 (min)
+Process 57 ODE solution time: .13 (min)
+Process 44 ODE solution time: .13 (min)
+Process 42 ODE solution time: .13 (min)
+Process 9 ODE solution time: .13 (min)
+Process 4 ODE solution time: .13 (min)
+Process 45 ODE solution time: .13 (min)
+Process 18 ODE solution time: .13 (min)
+Process 34 ODE solution time: .13 (min)
+Process 85 ODE solution time: .13 (min)
+Process 78 ODE solution time: .13 (min)
+Process 22 ODE solution time: .13 (min)
+Process 17 ODE solution time: .13 (min)
+Process 8 ODE solution time: .13 (min)
+Process 50 ODE solution time: .13 (min)
+Process 39 ODE solution time: .13 (min)
+Process 35 ODE solution time: .13 (min)
+Process 71 ODE solution time: .13 (min)
+Process 67 ODE solution time: .13 (min)
+Process 15 ODE solution time: .13 (min)
+Process 87 ODE solution time: .13 (min)
+Process 33 ODE solution time: .12 (min)
+Process 26 ODE solution time: .13 (min)
+Process 53 ODE solution time: .13 (min)
+Process 38 ODE solution time: .13 (min)
+Process 3 ODE solution time: .13 (min)
+Process 1 ODE solution time: .13 (min)
+Process 62 ODE solution time: .13 (min)
+Process 55 ODE solution time: .13 (min)
+Process 47 ODE solution time: .13 (min)
+Process 63 ODE solution time: .13 (min)
+Process 64 ODE solution time: .13 (min)
+Process 5 ODE solution time: .13 (min)
+Process 58 ODE solution time: .13 (min)
+Process 40 ODE solution time: .13 (min)
+Process 68 ODE solution time: .13 (min)
+Process 66 ODE solution time: .13 (min)
+Process 25 ODE solution time: .13 (min)
+Process 79 ODE solution time: .13 (min)
+Process 43 ODE solution time: .12 (min)
+Process 19 ODE solution time: .13 (min)
+Process 27 ODE solution time: .13 (min)
+Process 2 ODE solution time: .13 (min)
+Process 75 ODE solution time: .13 (min)
+Process 29 ODE solution time: .13 (min)
+Process 89 ODE solution time: .13 (min)
+Process 20 ODE solution time: .13 (min)
+Process 76 ODE solution time: .12 (min)
+Process 52 ODE solution time: .13 (min)
+Process 10 ODE solution time: .13 (min)
+Process 81 ODE solution time: .13 (min)
