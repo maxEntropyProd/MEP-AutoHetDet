@@ -1,6 +1,6 @@
 # Simple makefile to compile MPI version of AutoHetDet_0D
-# Note, this requires editing of file locations to get it to run on your cluster probably
-# but is provided here to see what needs to be compiled, etc.
+# If you have the intel fortran compiler installed, runnin make in src directory should 
+# produced the executable AutoHetDet_0D_Opt
 #
 # To run with MPI, use something like > mpiexec -machinefile ../mpi.hosts ../AutoHetDet_0D
 #
@@ -38,8 +38,8 @@ LATSRC = ./latin_random/latin_random.f90
 LIN2LAPSRC = ./linpack2lapack/Linpack2Lapack.f90
 
 # Main program source files
-DRVSRC = Module_Thermo_V5.1.f90 
-DRVSRC += AutoHetDet_opt_V4.7.f90
+DRVSRC = ./Module_Thermo_V5.1.f90 
+DRVSRC += ./AutoHetDet_opt_V4.7.f90
 
 # note, add back  $(LIN2LAPSRC) if returning to MKL version
 CPU: $(BIMSRC) $(LIN2LAPSRC) $(BOBSRC) $(LATSRC) $(DRVSRC)
