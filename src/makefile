@@ -1,5 +1,5 @@
 # Simple makefile to compile MPI version of AutoHetDet_0D
-# Note, this requires editing of file locations to get it to run on your cluster
+# Note, this requires editing of file locations to get it to run on your cluster probably
 # but is provided here to see what needs to be compiled, etc.
 #
 # To run with MPI, use something like > mpiexec -machinefile ../mpi.hosts ../AutoHetDet_0D
