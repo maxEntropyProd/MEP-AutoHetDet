@@ -1,6 +1,7 @@
 # Simple makefile to compile MPI version of AutoHetDet_0D
 # If you have the intel fortran compiler installed, runnin make in src directory should 
 # produced the executable AutoHetDet_0D_Opt
+# This script doesn't clean up any files, such as *.mod
 #
 # To run with MPI, use something like > mpiexec -machinefile ../mpi.hosts ../AutoHetDet_0D
 #
