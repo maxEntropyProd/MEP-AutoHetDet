@@ -1,0 +1,124 @@
+! this is an eample input file that corresponds to Run149_opt4.5_1p1b1c
+! which is just one of each of the three functional groups.
+! Note, the code saves all solutions, so if you run this on a large cluster, the output
+! can be get big very fast (100 cores can generate 100's of GB of data)
+
+&params
+! Input parameters
+npp   = 1 ! number of S1 primary producers
+nbac  = 1 ! number of bacteria
+ncc   = 1 ! number of S2 consumers
+
+! sumSigWeights determines the nature of the entropy production objective function to be maximized
+! For EP optimization, these are the weights on EP associated with [Rxns, H20, particles]
+! Total EP production use 1., 1., 1., for just rxn, use 1., 0., 0., etc.
+sumSigWeights = 1., 1., 1. 
+
+! for EP surface generation
+genSurf = .false.
+readeps = .false.
+whichPP = 1 ! which of the possible pp's to run f_pp and phi_pp over
+nSurfPts = 10 ! 1051  ! Number of points in the x and y dimension of the 2D surface to produce
+reportTime = 1. ! 10. ! How often to update during problem in min.
+
+iseed = 10 ! changing this value to produce a different set of random values for epp and ecc.
+nuStar = 350.  ! 1/d 
+nuDet  = 175. ! 35.   ! detritus decomp (1/d)
+kappa = 5000. ! uM
+surA = 1.0 ! surface area (m^2).  If set to 1 m^2, then results can be though of as per m2
+T_K = 293. ! get temperature in K
+pH  = 8.1  ! get pH
+depth = 1.0 ! average depth (m)
+is = 0.72  ! use the ionic strength (M) = 0.72*sal/35.0
+dil_t0 = 0.2 ! dilution rate at t0 (1/d)
+dil_tf = 0.2 ! dilution rate at tf (1/d)
+dil_n = 0    ! number of steps in dilution rate
+
+! Parameters associated with in-silico slection of traits
+minCompFac = 500000.0 ! if a process takes longer than (tf-t0)/minCompFac, then it is terminated 
+epp_min = 0.00001 ! min and max values for epp
+epp_max = 1.0 
+ecc_min = 0.00001 ! min and max values for ecc 
+ecc_max = 1.0 
+ebac_min = 0.0001 ! min and max values for ebac 
+ebac_max = 1.0 
+
+! limits and parameters 
+! The square wave is limited to occur every day, so frequency if fixed in V4.0
+! tOn_pp is when the step up occurs, and tOff_pp when in steps down.  This are in days
+! Note, the overhangs (< 0 on tOn and >1 on tOff) insures omg_pp can be fully on all day
+! because of the nature of the exp step function and value of sigOmg_pp.
+sigOmg_pp = 200. ! this is used in the exp setup function to make a "smooth" square wave
+tOn_pp_min  = -0.05 ! lower limit on on time (d)
+tOn_pp_max  = 1.0   ! upper limit when step up can occur (d)
+tOff_pp_min = 0.0   ! lower limit when a step down can occur (d)
+tOff_pp_max = 1.05  ! upper limit when step down occurs (d)
+
+! Coupling between r_1,pp and r_2,pp.  If k_pp is set to zero (default) then reactions are not coupled
+! but if k_pp > 0, then it sets the ratio of C_pp to pp (i.e., C_pp/pp = k_pp)
+! be careful, there is also the variable k_p, for ligth absorption (bad naming here) 
+! Also, f_pp should be constrained to 0 and phi_pp 0->2pi if k_pp /= 0.
+k_pp = 0.0
+
+dicI = 2000. ! uM
+o2I = 225. ! uM
+nh3I_t0 = 5. ! nh3I at t0 uM
+nh3I_tf = 5. ! nh3I at tf uM
+nh3I_n  = 0   ! Number of steps in nh3I uM
+c_LI = 10.
+c_dI = 100.0 ! uM 
+n_dI = 7.
+ppI   = 0.1 ! initialize all pp to this value 
+c_ppI = 0.1
+ccI   = 0.1 ! initialize all cc to this value 
+bacI  = 0.1 !
+
+! Phosphate concentrations. Held fixed, but used for thermodynamic calcs
+h3po4 = 1. ! uM
+P_d   = 5. ! detrital P (uM)
+
+! Biomass composition. From Battley1998 for yeast. Unit carbon
+alf = 1.613 ! H
+bet = 0.557 ! O
+gam = 0.158 ! N
+del = 0.012 ! P
+cell_F = 1000.0 ! concentration factor for C_P. Intracellular versus extracellular volume.  In theory this changes as phyS conc does, but keep as constant for now.
+delPsi = 0.1 !0.240 ! LaRowe's thermo driver.  Cell membrane potential (V) 
+
+! Gas Exchange, temp and pH
+pV_o2  = 3.0 ! piston velocity for O2 (m/d)
+pV_co2 = 2.6 ! piston velocity for CO2 (m/d)  Should use schmidt no. to relate these, do it later
+pO2    = 0.21    ! partial pressure of O2 in atmosphere (atm)
+pCO2   = 400.d-6 ! partial pressures CO2 in the atmosphere (atm)
+
+! Solar parmeters
+I0max = 406000.  ! Solar constant in PAR (mmol photons /m^2 /d) (Not micromoles) BUT, this value is just a fit to get PAR ~2000 uE/m2/s on 25 Jun
+dLat = 42.0 ! Latitude for calculating solar radition
+!dGr_Ggamma = -223.5 ! Energy available in green light, accounting for thermo efficiency (J/mmol)
+dGr_Ggamma = -253. ! (J/mmol photon of blue light, 440 nm)
+k_w = 0.011  ! water attenuation coef (1/m)  (see Table 2.11 of Wozniak2007 for 430 nm light
+k_p = 0.000625 !0.004 ! attenuation coef by non algal partiles  Assume 4x less than k_chla (m^2/mmol-S)
+k_chla = 0.0025 ! attenuation coef by algal pigments.  Based on eutrophic a in Fig. 6.29, pg 367 in Wozniak2007, adjusted to (m^2/mmol-S)
+
+! BiM ODE solution parameters
+ompThreads = 1 ! Specify how many threads to use
+t0 = 0. ! 43466. ! the start and stop time for ODE integration (d)
+tDays = 730. ! number of days to run
+t0_ep = 0.   ! For optimization, interval over which EP production is maximized.
+tf_ep = 730.  ! end of EP interval.
+maxstep_BiM = 10000000 ! maximum number of BiM iterations (set to 0 to use default of 100000)
+useOmpJac = 0 ! set to 0 to have BiM calculate numerical gradient or 1 to use openMP-based numerical gradient
+maxattempts = 1 ! number of attempts to solve ODEs before declaring failure
+absZero = 1.e-8 ! Numbers less than this are set to this value smoothly.  Prevents division by zero.
+atol1 = 1.0e-6 !1.0e-6 ! absolute tolerance for BiM
+rtol1 = 1.0e-6 !1.0e-5 ! relative tolerance for BiM
+hmax_BiM = 0.05 ! largest step size (d). Original default = (TEND-T0)/8
+
+! parameters used by BOBYQA
+rhobeg = 0.49 ! initial and final values of a trust region radius
+rhoend = 0.0001 
+iprint = 0 ! controls amount of printing (0, 1, 2 or 3)
+maxfun = 10000 ! maximum number of calls to CALFUN
+optimize = .true. ! If true, MEP optimization occurs, otherwise just solve ODEs
+fcnUpdate = 100 ! output current status after every fcnUpdate ODE integrations
+/
