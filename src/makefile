@@ -20,26 +20,26 @@ FC = mpiifort
 FFLAGSCPU = -O3 -mkl -xHost -qopenmp -ipo -qopt-matmul -o AutoHetDet_0D_Opt
 
 # using BiM:
-BIMDIR = /home/jvallino/fProjects/forlib/BiM
+BIMDIR = ./BiM
 # Module source files must be compiled in a specific order because of inter dependencies
 BIMSRC  = $(BIMDIR)/bim__NoWrite_SOLOUTmod.for
 BIMSRC += $(BIMDIR)/subbim_NoLinAlg.for
 
 # using hyperBOB
-BOBDIR = /home/jvallino/fProjects/forlib/BOBYQA
+BOBDIR = ./hyperBOB
 BOBSRC  = $(BOBDIR)/kind_module.f90
 BOBSRC += $(BOBDIR)/bobyqa.f90
 BOBSRC += $(BOBDIR)/hyperBOB_V1.4.f90
 
 # using latin hypercube
-LATSRC = /home/jvallino/fProjects/forlib/Latin_Random/latin_random.f90
+LATSRC = ./latin_random/latin_random.f90
 
 # LINPACK to LAPACK
-LIN2LAPSRC = /home/jvallino/fProjects/forlib/Linpack2Lapack/Linpack2Lapack.f90
+LIN2LAPSRC = ./linpack2lapack/Linpack2Lapack.f90
 
 # Main program source files
-DRVSRC = /home/jvallino/fProjects/ThermoData/Module_Thermo_V5.1.f90 
-DRVSRC += /home/jvallino/fProjects/AutoHetDet_0D_Opt/AutoHetDet_opt_V4.7.f90
+DRVSRC = Module_Thermo_V5.1.f90 
+DRVSRC += AutoHetDet_opt_V4.7.f90
 
 # note, add back  $(LIN2LAPSRC) if returning to MKL version
 CPU: $(BIMSRC) $(LIN2LAPSRC) $(BOBSRC) $(LATSRC) $(DRVSRC)
